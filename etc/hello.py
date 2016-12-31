@@ -1,11 +1,3 @@
-CONFIG = {
-	'mode' : 'wsgi',
-	'working_dir' : 'home/box/web',
-	'python' : '/usr/bin/python3',
-	'args' : (
-		'--bind=0.0.0.0:8080',
-		'--workers=3',
-		'--timeout=60',
-		'wsgi',
-	),
-}
+bind = '0.0.0.0:8080'
+pythonpath = '/home/box/web/'
+app = 'hello:application'
